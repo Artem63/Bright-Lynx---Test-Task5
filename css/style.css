@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	margin: 0px;
+	background-color: #D0FFFFFF;
+}
+
+/*шапка и навигация сайта*/
+.header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: fixed center;
+}
+
+.logo {
+	margin: 10px 10px 0;
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #facf5a;
+	position: fixed;
+	padding: 10px;	
+}
+
+.nav a {
+	text-align: center;
+  	padding: 15px;
+  	text-decoration: none;
+  	font-family: 'Mukta', sans-serif;
+  	font-weight: bold;
+  	color: #233142;
+}
+
+button {
+	font-family: 'Mukta', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	color: black;
+	border: none;
+	text-align: center;
+    text-decoration: none;
+    background-color: #e7e7e7;
+    padding: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+ }
+
+button:hover  {
+  background-color: #4CAF50; 
+  color: white;
+}
+
+.login {
+	position: relative; 
+    top:0; 
+    left: 660px;
+    height: 40px;
+}
+
+.register {
+	position: relative; 
+    top:0; 
+    left: 676px;
+    height: 40px;
+}
+
+/* фон*/
+.main {
+	background-color: #4f9da6;
+}
+
+/* весь контент в блоке*/
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction:row;
+	background-color: #233142;
+	margin-left: auto;
+	margin-right: auto;
+	/*border: solid;*/
+	max-width: 1024px;
+}
+
+
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: row;
+	margin: 20px auto 0;
+}
+
+.mdiv {
+	padding: 0px 10px 0 10px;
+	width: 230px;
+}
+
+h3 {
+	text-align: center;
+	font-family: 'Catamaran', sans-serif;
+	font-size: 18px;
+	/*margin: 5px;*/
+	width: 230px;
+}
+
+a:hover {
+	color: #4f9da6;
+}
+
+
+/*боковой блок с фото и ссылками*/
+.sideinfo {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	/*background-color: #C95BD1F3;*/
+	width: 230px;
+	margin: 10px 20px;
+}
+
+.sidediv {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 20px auto;
+}
+
+.sidediv2 {
+	margin: auto;
+	background: #D5C529FF;
+}
+.sidediv2 a {
+	color: #4f9da6;	
+}
+.sidediv2 a:hover {
+	color: #233142	
+}
+.sidediv2 li {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	padding: 0 50px;
+	list-style: none;
+}
+
+h4 {
+	margin-top: 10px;
+	padding-bottom: 10px;
+	font-size: 18px;
+}
+
+/*блок вывода новостей*/
+.info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 30px auto;
+	/*border: solid;*/
+	width: 700px;
+	
+}
+
+.vid {
+	padding: 5px 20px;
+}
+
+.info .vid {
+	margin: 30px auto;
+	width: 600px;
+}
+
+.news {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin: 10px auto 0;
+}
+
+.imgnews {
+	width: 220px;
+	margin: 10px auto 0;
+}
+
+.imgnews img {
+	float: left;
+}
+
+a {
+	color: #facf5a;
+}
+
+
+/*contacts page*/
+
+.map {
+	margin: 120px auto 55px;
+}
+
+/*gallery page*/
+
+.container1 {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		/*https://css-tricks.com/almanac/properties/a/animation/*/
+		animation: pulse 10s infinite;
+		margin: 80px;
+}
+
+
+@keyframes pulse {
+  0% {
+    background-color: #4f9da6; 
+  }
+  100% {
+    background-color: #233142;
+  }
+}
+
+.headgal h1 {
+	margin: 200px;
+}
+
+.container1 img {
+	width: 450px;
+	height: 300px;
+	margin: 10px;
+	transition: all 0.8s;
+}
+
+.container1 img:hover {
+	transform: scale(1.5);
+}
